@@ -55,11 +55,19 @@ important but we are not going to focus on it in this course.
 3. Write some tests. We are going to check the properties of some `numpy` functions for the sake of this exercise, 
     however, normally you would write a test for your code and not third-party packages. Below are some guidelines on
     some tests that should be implemented, but you are of course free to implement more tests. You can at any point check
-    if your tests are passing by typing in a terminal
+    if your tests are passing by typing in a terminal:
 
     ```bash
-    pytest tests/
+    pytest code_testing/
     ```
+
+    or just
+
+    ```bash
+    pytest
+    ```
+
+    while inside `code_testing/`.
 
     When you implement a test you need to follow two standards, for `pytest` to be able to find your tests. First, any 
     files created (except `__init__.py`) should always start with `test_*.py`. Secondly, any test implemented needs to 
@@ -81,7 +89,7 @@ important but we are not going to focus on it in this course.
     2. Afterward, let's test `np.linalg.eig` which calculates the eigen decomposition for a given matrix. You should 
         test the following:
 
-        * For a given `(N,N)` matrix, the shapes of the eigenvector matrix and eigenvalue matrix is also `(N,N)`
+        * For a given `(N,N)` matrix, the eigenvector matrix is of shape `(N,N)` and the eigenvalue array is of shape `(N,)`
         * For a randomly generated symmetric matrix, all the eigenvalues are real
         * For a positive semidefinite matrix, all the eigenvalues are real and non-negative
 
@@ -107,9 +115,9 @@ important but we are not going to focus on it in this course.
 
         ```python
         def test_valueerror_being_raised():
-            with pytest.raises(ValueError, match='this is the message printed')
+            with pytest.raises(ValueError, match='this is the message printed'):
                 new_arange(start=0, stop=5, step=0.5, dtype=np.int32)
-      ```
+        ```
 
     4. A test is only as good as the error message it gives, and by default `assert` will only report that the check
         failed. However, we can help our self and others by adding strings after `assert` like
@@ -120,14 +128,14 @@ important but we are not going to focus on it in this course.
 
         Add such comments to the assert statements you just did in privious exercises.
 
-4. After writing the different tests, make sure that they are passing locally.
+5. After writing the different tests, make sure that they are passing locally.
 
-5. We often want to check a function/module for various input arguments. In this case, you could write the same test 
+6. We often want to check a function/module for various input arguments. In this case, you could write the same test 
     over and over again for the different input, but `pytest` also has build in support for this with the use of the
     [pytest.mark.parametrize decorator](https://docs.pytest.org/en/6.2.x/parametrize.html).
     Implement a parametrized test and make sure that it runs for different inputs.
 
-6. (Optional) There is no way of measuring how good the test you have written is. However, what we can measure is the
+7. (Optional) There is no way of measuring how good the test you have written is. However, what we can measure is the
     *code coverage*. Code coverage refers to the percentage of your codebase that gets run when all your tests are 
     executed. Having a high coverage at least means that all your code will run when executed.
 
@@ -140,7 +148,7 @@ important but we are not going to focus on it in this course.
     2. Instead of running your tests directly with `pytest`, now do
 
         ```bash
-        coverage run -m pytest tests/
+        coverage run -m pytest
         ```
 
     3. To get a simple coverage report simply type
