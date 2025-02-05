@@ -15,10 +15,10 @@ Webpage: <https://skaftenicki.github.io/ku_devops/>.
 This repository contains a small introduction to *developer operations* (DevOps) for students in the course
 [Grundlæggende Data Science (GDS)](https://kurser.ku.dk/course/ndab23000u/2023-2024) at Copenhagen University.
 The four core topics covered are:
-1. [Virtual environments](https://github.com/SkafteNicki/ku_devops/tree/main/virtual_environments)
-2. [Version control](https://github.com/SkafteNicki/ku_devops/tree/main/version_control)
-3. [Code testing](https://github.com/SkafteNicki/ku_devops/tree/main/code_testing)
-4. [Experiment tracking](https://github.com/SkafteNicki/ku_devops/tree/main/experiment_tracking)
+1. [Virtual environments](https://github.com/elliottd/ku_gds_devops/tree/main/virtual_environments)
+2. [Version control](https://github.com/elliottd/ku_gds_devops/tree/main/version_control)
+3. [Code testing](https://github.com/elliottd/ku_gds_devops/tree/main/code_testing)
+4. [Experiment tracking](https://github.com/elliottd/ku_gds_devops/tree/main/experiment_tracking)
 
 You are supposed to complete 1-3 during the exercise session on February 6th and 4 during the exercise session on February 27th.
 
