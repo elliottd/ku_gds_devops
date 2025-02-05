@@ -129,6 +129,7 @@ results.
     and then try to include the following lines of code:
 
     ```python
+    labels = df.feature_names
     wandb.sklearn.plot_class_proportions(y_train, y_test, labels)
     wandb.sklearn.plot_learning_curve(model, X_train, y_train)
     wandb.sklearn.plot_roc(y_test, y_probas, labels)
