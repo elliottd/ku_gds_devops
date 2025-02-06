@@ -10,10 +10,8 @@ hide:
 
 # DevOps for data scientists
 
-Webpage: <https://skaftenicki.github.io/ku_devops/>.
-
 This repository contains a small introduction to *developer operations* (DevOps) for students in the course
-[Grundlæggende Data Science (GDS)](https://kurser.ku.dk/course/ndab23000u/2023-2024) at Copenhagen University.
+[Grundlæggende Data Science (GDS)](https://kurser.ku.dk/course/ndab23000u/2024-2025) at Copenhagen University.
 The four core topics covered are:
 1. [Virtual environments](https://github.com/elliottd/ku_gds_devops/tree/main/virtual_environments)
 2. [Version control](https://github.com/elliottd/ku_gds_devops/tree/main/version_control)
