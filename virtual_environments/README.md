@@ -101,7 +101,7 @@ cluster if you use virtual environments through conda.
     normally have to install with `miniconda`. The downside is that `conda` is a much larger package which can be a
     huge disadvantage on smaller devices.
 
-2. Start a terminal or command prompt and type in `conda help` which should show you the help page for the different
+2. Start a terminal or command prompt and type in `conda --help` which should show you the help page for the different
     commands that you can use with conda. If this does not work you probably need to set some system variable to
     [point to the conda installation](https://stackoverflow.com/questions/44597662/conda-command-is-not-recognized-on-windows-10)
 
