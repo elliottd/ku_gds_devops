@@ -18,7 +18,7 @@ The four core topics covered are:
 3. [Code testing](https://github.com/elliottd/ku_gds_devops/tree/main/code_testing)
 4. [Experiment tracking](https://github.com/elliottd/ku_gds_devops/tree/main/experiment_tracking)
 
-You are supposed to complete 1-3 during the exercise session on February 6th and 4 during the exercise session on February 27th.
+You are supposed to complete 1-3 during the exercise session in Week 6, and exercise 4 during the exercise session in week 9.
 
 When doing the exercises, to maximize your DevOps experience you 
 should prioritize:
